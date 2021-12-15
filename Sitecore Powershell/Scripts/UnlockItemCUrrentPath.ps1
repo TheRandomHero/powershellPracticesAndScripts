@@ -1,0 +1,1 @@
+Unlock-Item -Path (Get-Location).Path

@@ -1,0 +1,30 @@
+$media = Get-Item -Path "master:/sitecore/media library/System/solution_tags"
+[system.io.stream]$body = $media.Fields["blob"].GetBlobStream()
+try 
+{
+    $contents = New-Object byte[] $body.Length
+    $body.Read($contents, 0, $body.Length) | Out-Null
+} 
+finally 
+{
+    $body.Close()    
+}
+
+$csv = [System.Text.Encoding]::Default.GetString($contents) | ConvertFrom-Csv -Delimiter ';'
+
+$countryNodes = @("DBE")
+foreach ($node in $countryNodes) {
+    $node
+    foreach ($row in $csv) {
+        $title = $row.'Page Title'
+        
+        $itemName = $row.'link' -replace 'https://www.delaware.pro/en-be/solutions/', '' -replace '-', ' '
+        $page = Get-Item -Path "/sitecore/content/Sites/Corporate/$node/Home/Solutions/$itemName"
+        if ($page) {
+            Publish-Item -Item $page -Language "en-be"
+            "Success: published item " + $page.fullpath
+        } else {
+            "Error: Couldn't find page with " + $row.'Page Title' + " with name $itemName on node $node"
+        }
+    }
+}

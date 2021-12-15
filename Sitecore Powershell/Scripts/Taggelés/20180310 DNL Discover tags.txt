@@ -1,0 +1,231 @@
+Missing description: /sitecore/content/Shared Data/discover/blog/2018/De droom van de maakindustrie data uit het veld als input voor innovatie | {8E41E513-3F68-4BE6-8E37-0394A9FB3D7F}
+Missing description: /sitecore/content/Shared Data/discover/blog/2018/Misvattingen over beheer 1 De Helpdesk | {9B40F1F1-45D9-4315-8B5A-C9DDA527B686}
+Missing description: /sitecore/content/Shared Data/discover/Cases/Netherlands/Anova Seafood | {57779DC5-8EB7-40DE-963F-9F21FEAE232C}
+Missing description: /sitecore/content/Shared Data/discover/News/2017/GIB | {934EE50D-F571-43CB-88D0-7B341CF530DB}
+Missing description: /sitecore/content/Shared Data/discover/Cases/Netherlands/Heuschen en Schrouff | {16858C67-DAF3-4FE1-B5CA-FA68C5666451}
+Missing description: /sitecore/content/Shared Data/discover/blog/2017/Wonen op Mars | {B082BD51-4E23-4BC7-A4BC-91E15359163E}
+Missing description: /sitecore/content/Shared Data/discover/blog/2017/Hoe is het om te werken bij delaware Delawarian Ralph Jansen praat je bij | {12E24D91-F579-4723-968A-8F5B6D67929B}
+Missing description: /sitecore/content/Shared Data/discover/blog/2017/De Spotifyisering van de maakindustrie | {0CBDFFB7-5445-4EFC-865E-0AEAF077FB0A}
+Missing description: /sitecore/content/Shared Data/discover/Cases/Netherlands/PZH | {313A1578-74E6-4A0C-895C-52CE73E5C44C}
+Missing description: /sitecore/content/Shared Data/discover/blog/2017/De innovatie revolutie op het platteland en wat jij daarvan kunt leren | {7F8A7DDC-69C1-41F1-96E4-4AB7155137A2}
+Missing description: /sitecore/content/Shared Data/discover/blog/2017/IoT in discrete manufacturing 5 tips om vandaag al te starten | {A59C52D7-8B21-4E0B-9F2C-49DC3AEA8BA8}
+Missing description: /sitecore/content/Shared Data/discover/Cases/Netherlands/Stahl | {DDB4AECE-E0DA-4877-A2D7-D4552A3D7A72}
+Missing description: /sitecore/content/Shared Data/discover/blog/2017/Een transparante voedselketen | {CD1B579B-9E9A-4828-8CAE-72E13FD607A1}
+Missing description: /sitecore/content/Shared Data/discover/blog/2017/Factuurverwerking zonder zorgen | {1BCC259A-F38A-4991-9CEB-3DE81FCB39C5}
+Missing description: /sitecore/content/Shared Data/discover/News/2017/implementatie S4HANA Fassin | {86BCB5A5-0573-403D-8C92-D9DF5F46730F}
+Missing description: /sitecore/content/Shared Data/discover/blog/2017/Een smart manufacturer heeft zijn PLM op orde | {F0751FE3-6680-42F2-BF9A-C76B4584B9A2}
+Missing description: /sitecore/content/Shared Data/discover/Cases/US/Alliander | {D717EBBF-9145-4280-BCF6-60CEC1107449}
+Missing description: /sitecore/content/Shared Data/discover/blog/2017/Alp d Huzes | {F8B3AB3B-3782-4235-BF77-6BDFE3C45611}
+Missing description: /sitecore/content/Shared Data/discover/News/2017/S4HANA certification | {2073FBB4-C5A3-4D80-A468-A536C4C8DD0A}
+Missing description: /sitecore/content/Shared Data/discover/blog/2017/20170117 De 5 grote voordelen van Internet of Things in de food industry | {9B24971E-B1B3-4F52-9EA6-50C200D623A7}
+Missing description: /sitecore/content/Shared Data/discover/blog/2018/SAP on Azure Better together | {115EE799-7E5A-457F-BAFF-B15C50DAA5C7}
+Missing description: /sitecore/content/Shared Data/discover/News/2018/Kinematik | {72903307-11E1-48E2-B27D-8EF899429474}
+Missing description: /sitecore/content/Shared Data/discover/blog/2015/2015 Voortman en Delaware Consulting | {0DEA4B51-F96C-417E-987D-1144277C4C0F}
+Missing description: /sitecore/content/Shared Data/discover/blog/2015/2015 De toekomst van de maakindustrie in de networked economy | {56254FA0-B536-4694-8F89-C29AB1BEAA1D}
+Missing description: /sitecore/content/Shared Data/discover/blog/2015/2015 Integratie is sleutelwoord voor industrie van de toekomst | {74A9F403-F0EC-4C40-A3AE-AADD6B3C861C}
+
+
+
+
+Name                             Children Language Version Id                                     TemplateName
+----                             -------- -------- ------- --                                     ------------
+De droom van de maakindustrie... True     en       1       {8E41E513-3F68-4BE6-8E37-0394A9FB3D7F} Discover Blog
+Success: added Industry tags to /sitecore/content/Shared Data/discover/blog/2018/De droom van de maakindustrie data uit het veld als input voor innovatie added tags: Discrete Manufacturing
+Success: added Technology tags to /sitecore/content/Shared Data/discover/blog/2018/De droom van de maakindustrie data uit het veld als input voor innovatie added tags: SAP
+Success: added Business tags to /sitecore/content/Shared Data/discover/blog/2018/De droom van de maakindustrie data uit het veld als input voor innovatie added tags:
+Success: added Trending tags to /sitecore/content/Shared Data/discover/blog/2018/De droom van de maakindustrie data uit het veld als input voor innovatie added tags:
+Misvattingen over beheer 1 De... True     en       1       {9B40F1F1-45D9-4315-8B5A-C9DDA527B686} Discover Blog
+Success: added Industry tags to /sitecore/content/Shared Data/discover/blog/2018/Misvattingen over beheer 1 De Helpdesk added tags:
+Success: added Technology tags to /sitecore/content/Shared Data/discover/blog/2018/Misvattingen over beheer 1 De Helpdesk added tags:
+Success: added Business tags to /sitecore/content/Shared Data/discover/blog/2018/Misvattingen over beheer 1 De Helpdesk added tags: operations
+Success: added Trending tags to /sitecore/content/Shared Data/discover/blog/2018/Misvattingen over beheer 1 De Helpdesk added tags:
+Anova Seafood                    True     en       1       {57779DC5-8EB7-40DE-963F-9F21FEAE232C} Discover Case
+Success: added Industry tags to /sitecore/content/Shared Data/discover/Cases/Netherlands/Anova Seafood added tags: Food
+Success: added Technology tags to /sitecore/content/Shared Data/discover/Cases/Netherlands/Anova Seafood added tags: SAP
+Success: added Business tags to /sitecore/content/Shared Data/discover/Cases/Netherlands/Anova Seafood added tags:
+Success: added Trending tags to /sitecore/content/Shared Data/discover/Cases/Netherlands/Anova Seafood added tags:
+GIB                              True     en       1       {934EE50D-F571-43CB-88D0-7B341CF530DB} Discover News
+Success: added Industry tags to /sitecore/content/Shared Data/discover/News/2017/GIB added tags: Discrete Manufacturing
+Success: added Technology tags to /sitecore/content/Shared Data/discover/News/2017/GIB added tags: SAP
+Success: added Business tags to /sitecore/content/Shared Data/discover/News/2017/GIB added tags:
+Success: added Trending tags to /sitecore/content/Shared Data/discover/News/2017/GIB added tags:
+Heuschen en Schrouff             True     en       1       {16858C67-DAF3-4FE1-B5CA-FA68C5666451} Discover Case
+Success: added Industry tags to /sitecore/content/Shared Data/discover/Cases/Netherlands/Heuschen en Schrouff added tags:
+Success: added Technology tags to /sitecore/content/Shared Data/discover/Cases/Netherlands/Heuschen en Schrouff added tags: SAP
+Success: added Business tags to /sitecore/content/Shared Data/discover/Cases/Netherlands/Heuschen en Schrouff added tags:
+Success: added Trending tags to /sitecore/content/Shared Data/discover/Cases/Netherlands/Heuschen en Schrouff added tags:
+Wonen op Mars                    True     en       1       {B082BD51-4E23-4BC7-A4BC-91E15359163E} Discover Blog
+Success: added Industry tags to /sitecore/content/Shared Data/discover/blog/2017/Wonen op Mars added tags:
+Success: added Technology tags to /sitecore/content/Shared Data/discover/blog/2017/Wonen op Mars added tags: OpenText
+Success: added Business tags to /sitecore/content/Shared Data/discover/blog/2017/Wonen op Mars added tags:
+Success: added Trending tags to /sitecore/content/Shared Data/discover/blog/2017/Wonen op Mars added tags:
+Hoe is het om te werken bij d... True     en       1       {12E24D91-F579-4723-968A-8F5B6D67929B} Discover Blog
+Success: added Industry tags to /sitecore/content/Shared Data/discover/blog/2017/Hoe is het om te werken bij delaware Delawarian Ralph Jansen praat je bij added tags:
+Success: added Technology tags to /sitecore/content/Shared Data/discover/blog/2017/Hoe is het om te werken bij delaware Delawarian Ralph Jansen praat je bij added tags:
+Success: added Business tags to /sitecore/content/Shared Data/discover/blog/2017/Hoe is het om te werken bij delaware Delawarian Ralph Jansen praat je bij added tags:
+Success: added Trending tags to /sitecore/content/Shared Data/discover/blog/2017/Hoe is het om te werken bij delaware Delawarian Ralph Jansen praat je bij added tags:
+De Spotifyisering van de maak... True     en       1       {0CBDFFB7-5445-4EFC-865E-0AEAF077FB0A} Discover Blog
+Success: added Industry tags to /sitecore/content/Shared Data/discover/blog/2017/De Spotifyisering van de maakindustrie added tags: Discrete Manufacturing
+Success: added Technology tags to /sitecore/content/Shared Data/discover/blog/2017/De Spotifyisering van de maakindustrie added tags:
+Success: added Business tags to /sitecore/content/Shared Data/discover/blog/2017/De Spotifyisering van de maakindustrie added tags:
+Success: added Trending tags to /sitecore/content/Shared Data/discover/blog/2017/De Spotifyisering van de maakindustrie added tags:
+PZH                              True     en       1       {313A1578-74E6-4A0C-895C-52CE73E5C44C} Discover Case
+Success: added Industry tags to /sitecore/content/Shared Data/discover/Cases/Netherlands/PZH added tags:
+Get-Item : Cannot find path 'master:\sitecore\content\Shared Data\Solutions\Solution tags\Technology\Information management' because it does not exist.
+At line:11 char:24
++ ...  $tagItem = Get-Item -Path "/sitecore/content/Shared Data/Solutions/S ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (master:\sitecor...tion management:String) [Get-Item], IOException
+    + FullyQualifiedErrorId : ItemNotFound,Microsoft.PowerShell.Commands.GetItemCommand
+
+Success: added Technology tags to /sitecore/content/Shared Data/discover/Cases/Netherlands/PZH added tags: Information management
+Success: added Business tags to /sitecore/content/Shared Data/discover/Cases/Netherlands/PZH added tags:
+Success: added Trending tags to /sitecore/content/Shared Data/discover/Cases/Netherlands/PZH added tags:
+De innovatie revolutie op het... True     en       1       {7F8A7DDC-69C1-41F1-96E4-4AB7155137A2} Discover Blog
+Success: added Industry tags to /sitecore/content/Shared Data/discover/blog/2017/De innovatie revolutie op het platteland en wat jij daarvan kunt leren added tags: food
+Success: added Technology tags to /sitecore/content/Shared Data/discover/blog/2017/De innovatie revolutie op het platteland en wat jij daarvan kunt leren added tags:
+Success: added Business tags to /sitecore/content/Shared Data/discover/blog/2017/De innovatie revolutie op het platteland en wat jij daarvan kunt leren added tags:
+Success: added Trending tags to /sitecore/content/Shared Data/discover/blog/2017/De innovatie revolutie op het platteland en wat jij daarvan kunt leren added tags:
+IoT in discrete manufacturing... True     en       1       {A59C52D7-8B21-4E0B-9F2C-49DC3AEA8BA8} Discover Blog
+Success: added Industry tags to /sitecore/content/Shared Data/discover/blog/2017/IoT in discrete manufacturing 5 tips om vandaag al te starten added tags: Discrete Manufacturing
+Success: added Technology tags to /sitecore/content/Shared Data/discover/blog/2017/IoT in discrete manufacturing 5 tips om vandaag al te starten added tags:
+Success: added Business tags to /sitecore/content/Shared Data/discover/blog/2017/IoT in discrete manufacturing 5 tips om vandaag al te starten added tags:
+Success: added Trending tags to /sitecore/content/Shared Data/discover/blog/2017/IoT in discrete manufacturing 5 tips om vandaag al te starten added tags: Internet of Things
+Stahl                            True     en       1       {DDB4AECE-E0DA-4877-A2D7-D4552A3D7A72} Discover Case
+Success: added Industry tags to /sitecore/content/Shared Data/discover/Cases/Netherlands/Stahl added tags:
+Success: added Technology tags to /sitecore/content/Shared Data/discover/Cases/Netherlands/Stahl added tags: SAP
+Success: added Business tags to /sitecore/content/Shared Data/discover/Cases/Netherlands/Stahl added tags:
+Success: added Trending tags to /sitecore/content/Shared Data/discover/Cases/Netherlands/Stahl added tags:
+Een transparante voedselketen    True     en       1       {CD1B579B-9E9A-4828-8CAE-72E13FD607A1} Discover Blog
+Success: added Industry tags to /sitecore/content/Shared Data/discover/blog/2017/Een transparante voedselketen added tags: Food
+Success: added Technology tags to /sitecore/content/Shared Data/discover/blog/2017/Een transparante voedselketen added tags:
+Success: added Business tags to /sitecore/content/Shared Data/discover/blog/2017/Een transparante voedselketen added tags:
+Success: added Trending tags to /sitecore/content/Shared Data/discover/blog/2017/Een transparante voedselketen added tags:
+Factuurverwerking zonder zorgen  True     en       2       {1BCC259A-F38A-4991-9CEB-3DE81FCB39C5} Discover Blog
+Success: added Industry tags to /sitecore/content/Shared Data/discover/blog/2017/Factuurverwerking zonder zorgen added tags:
+Success: added Technology tags to /sitecore/content/Shared Data/discover/blog/2017/Factuurverwerking zonder zorgen added tags: SAP
+Success: added Business tags to /sitecore/content/Shared Data/discover/blog/2017/Factuurverwerking zonder zorgen added tags:
+Success: added Trending tags to /sitecore/content/Shared Data/discover/blog/2017/Factuurverwerking zonder zorgen added tags:
+implementatie S4HANA Fassin      True     en       1       {86BCB5A5-0573-403D-8C92-D9DF5F46730F} Discover News
+Success: added Industry tags to /sitecore/content/Shared Data/discover/News/2017/implementatie S4HANA Fassin added tags: Food
+Success: added Technology tags to /sitecore/content/Shared Data/discover/News/2017/implementatie S4HANA Fassin added tags: SAP
+Success: added Business tags to /sitecore/content/Shared Data/discover/News/2017/implementatie S4HANA Fassin added tags: IT
+Success: added Trending tags to /sitecore/content/Shared Data/discover/News/2017/implementatie S4HANA Fassin added tags:
+Een smart manufacturer heeft ... True     en       1       {F0751FE3-6680-42F2-BF9A-C76B4584B9A2} Discover Blog
+Success: added Industry tags to /sitecore/content/Shared Data/discover/blog/2017/Een smart manufacturer heeft zijn PLM op orde added tags: Discrete Manufacturing
+Success: added Technology tags to /sitecore/content/Shared Data/discover/blog/2017/Een smart manufacturer heeft zijn PLM op orde added tags: SAP
+Success: added Business tags to /sitecore/content/Shared Data/discover/blog/2017/Een smart manufacturer heeft zijn PLM op orde added tags:
+Success: added Trending tags to /sitecore/content/Shared Data/discover/blog/2017/Een smart manufacturer heeft zijn PLM op orde added tags:
+Alliander                        True     en       3       {D717EBBF-9145-4280-BCF6-60CEC1107449} Discover Case
+Success: added Industry tags to /sitecore/content/Shared Data/discover/Cases/US/Alliander added tags:
+Success: added Technology tags to /sitecore/content/Shared Data/discover/Cases/US/Alliander added tags: OpenTExt
+Success: added Business tags to /sitecore/content/Shared Data/discover/Cases/US/Alliander added tags:
+Success: added Trending tags to /sitecore/content/Shared Data/discover/Cases/US/Alliander added tags:
+Alp d Huzes                      True     en       1       {F8B3AB3B-3782-4235-BF77-6BDFE3C45611} Discover Blog
+Success: added Industry tags to /sitecore/content/Shared Data/discover/blog/2017/Alp d Huzes added tags:
+Success: added Technology tags to /sitecore/content/Shared Data/discover/blog/2017/Alp d Huzes added tags:
+Success: added Business tags to /sitecore/content/Shared Data/discover/blog/2017/Alp d Huzes added tags: HR
+Success: added Trending tags to /sitecore/content/Shared Data/discover/blog/2017/Alp d Huzes added tags:
+S4HANA certification             True     en       1       {2073FBB4-C5A3-4D80-A468-A536C4C8DD0A} Discover News
+Success: added Industry tags to /sitecore/content/Shared Data/discover/News/2017/S4HANA certification added tags:
+Success: added Technology tags to /sitecore/content/Shared Data/discover/News/2017/S4HANA certification added tags: SAP
+Success: added Business tags to /sitecore/content/Shared Data/discover/News/2017/S4HANA certification added tags: IT
+Success: added Trending tags to /sitecore/content/Shared Data/discover/News/2017/S4HANA certification added tags:
+20170117 De 5 grote voordelen... True     en       1       {9B24971E-B1B3-4F52-9EA6-50C200D623A7} Discover Blog
+Success: added Industry tags to /sitecore/content/Shared Data/discover/blog/2017/20170117 De 5 grote voordelen van Internet of Things in de food industry added tags: Food
+Success: added Technology tags to /sitecore/content/Shared Data/discover/blog/2017/20170117 De 5 grote voordelen van Internet of Things in de food industry added tags:
+Success: added Business tags to /sitecore/content/Shared Data/discover/blog/2017/20170117 De 5 grote voordelen van Internet of Things in de food industry added tags:
+Success: added Trending tags to /sitecore/content/Shared Data/discover/blog/2017/20170117 De 5 grote voordelen van Internet of Things in de food industry added tags:
+SAP on Azure Better together     True     en       2       {115EE799-7E5A-457F-BAFF-B15C50DAA5C7} Discover Blog
+Success: added Industry tags to /sitecore/content/Shared Data/discover/blog/2018/SAP on Azure Better together added tags:
+Success: added Technology tags to /sitecore/content/Shared Data/discover/blog/2018/SAP on Azure Better together added tags: Microsoft
+Success: added Business tags to /sitecore/content/Shared Data/discover/blog/2018/SAP on Azure Better together added tags: IT
+Success: added Trending tags to /sitecore/content/Shared Data/discover/blog/2018/SAP on Azure Better together added tags:
+Kinematik                        True     en       3       {72903307-11E1-48E2-B27D-8EF899429474} Discover News
+Success: added Industry tags to /sitecore/content/Shared Data/discover/News/2018/Kinematik added tags:
+Success: added Technology tags to /sitecore/content/Shared Data/discover/News/2018/Kinematik added tags: OpenText
+Success: added Business tags to /sitecore/content/Shared Data/discover/News/2018/Kinematik added tags:
+Success: added Trending tags to /sitecore/content/Shared Data/discover/News/2018/Kinematik added tags:
+DNL 20160913 Toekomstbestendi... True     en       1       {505EF509-C869-4757-8842-D55B6FF0C35C} Discover Blog
+2015 Toekomstbestendige produ... True     en       1       {2F8512CC-4C30-4861-85D4-7D385613BBF8} Discover Blog
+The property 'Industry' cannot be found on this object. Verify that the property exists and can be set.
+At line:7 char:5
++     $page.$tagCategoryName = ""
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyAssignmentException
+
+The property 'Industry' cannot be found on this object. Verify that the property exists and can be set.
+At line:16 char:13
++             $page.$tagCategoryName += $tagID
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyAssignmentException
+
+Success: added Industry tags to /sitecore/content/Shared Data/discover/blog/2016/DNL 20160913 Toekomstbestendige productieplanning in de maakindustrie /sitecore/content/Shared Data/discover/blog/2015/2015 Toekomstbestendige productieplannin
+g in de maakindustrie added tags: Discrete Manufacturing
+The property 'Technology' cannot be found on this object. Verify that the property exists and can be set.
+At line:7 char:5
++     $page.$tagCategoryName = ""
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyAssignmentException
+
+The property 'Technology' cannot be found on this object. Verify that the property exists and can be set.
+At line:16 char:13
++             $page.$tagCategoryName += $tagID
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyAssignmentException
+
+Success: added Technology tags to /sitecore/content/Shared Data/discover/blog/2016/DNL 20160913 Toekomstbestendige productieplanning in de maakindustrie /sitecore/content/Shared Data/discover/blog/2015/2015 Toekomstbestendige productieplann
+ing in de maakindustrie added tags: SAP
+The property 'Business' cannot be found on this object. Verify that the property exists and can be set.
+At line:7 char:5
++     $page.$tagCategoryName = ""
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyAssignmentException
+
+The property 'Business' cannot be found on this object. Verify that the property exists and can be set.
+At line:16 char:13
++             $page.$tagCategoryName += $tagID
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyAssignmentException
+
+The property 'Business' cannot be found on this object. Verify that the property exists and can be set.
+At line:16 char:13
++             $page.$tagCategoryName += $tagID
++             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyAssignmentException
+
+Success: added Business tags to /sitecore/content/Shared Data/discover/blog/2016/DNL 20160913 Toekomstbestendige productieplanning in de maakindustrie /sitecore/content/Shared Data/discover/blog/2015/2015 Toekomstbestendige productieplannin
+g in de maakindustrie added tags: Operations IT
+The property 'Trending' cannot be found on this object. Verify that the property exists and can be set.
+At line:7 char:5
++     $page.$tagCategoryName = ""
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyAssignmentException
+
+Success: added Trending tags to /sitecore/content/Shared Data/discover/blog/2016/DNL 20160913 Toekomstbestendige productieplanning in de maakindustrie /sitecore/content/Shared Data/discover/blog/2015/2015 Toekomstbestendige productieplannin
+g in de maakindustrie added tags:
+2015 Voortman en Delaware Con... True     en       1       {0DEA4B51-F96C-417E-987D-1144277C4C0F} Discover Blog
+Success: added Industry tags to /sitecore/content/Shared Data/discover/blog/2015/2015 Voortman en Delaware Consulting added tags: Discrete Manufacturing
+Success: added Technology tags to /sitecore/content/Shared Data/discover/blog/2015/2015 Voortman en Delaware Consulting added tags: SAP
+Success: added Business tags to /sitecore/content/Shared Data/discover/blog/2015/2015 Voortman en Delaware Consulting added tags: Operations IT
+Success: added Trending tags to /sitecore/content/Shared Data/discover/blog/2015/2015 Voortman en Delaware Consulting added tags:
+Error: Couldn't find page with 5 voordelen van een ge?ntegreerd make-to-order (MTO*) 3D productieproces with name five voordelen van een geintegreerd make to order on node DBR
+2015 De toekomst van de maaki... True     en       1       {56254FA0-B536-4694-8F89-C29AB1BEAA1D} Discover Blog
+Success: added Industry tags to /sitecore/content/Shared Data/discover/blog/2015/2015 De toekomst van de maakindustrie in de networked economy added tags: Discrete Manufacturing
+Success: added Technology tags to /sitecore/content/Shared Data/discover/blog/2015/2015 De toekomst van de maakindustrie in de networked economy added tags: SAP
+Success: added Business tags to /sitecore/content/Shared Data/discover/blog/2015/2015 De toekomst van de maakindustrie in de networked economy added tags: Operations IT
+Success: added Trending tags to /sitecore/content/Shared Data/discover/blog/2015/2015 De toekomst van de maakindustrie in de networked economy added tags:
+2015 Integratie is sleutelwoo... True     en       1       {74A9F403-F0EC-4C40-A3AE-AADD6B3C861C} Discover Blog
+Success: added Industry tags to /sitecore/content/Shared Data/discover/blog/2015/2015 Integratie is sleutelwoord voor industrie van de toekomst added tags: Discrete Manufacturing
+Success: added Technology tags to /sitecore/content/Shared Data/discover/blog/2015/2015 Integratie is sleutelwoord voor industrie van de toekomst added tags: SAP
+Success: added Business tags to /sitecore/content/Shared Data/discover/blog/2015/2015 Integratie is sleutelwoord voor industrie van de toekomst added tags: Operations IT
+Success: added Trending tags to /sitecore/content/Shared Data/discover/blog/2015/2015 Integratie is sleutelwoord voor industrie van de toekomst added tags:
+

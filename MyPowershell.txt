@@ -1,0 +1,209 @@
+<#
+#Remove every specified language version on childs
+Get-ChildItem -Id "{B5883FA6-30D1-437A-902C-60131E3513B1}" -recurse | Remove-ItemLanguage -Language "nl"
+
+#Copy specified language on every child
+Get-ChildItem -Id "{1B03915E-7674-43BD-A114-18838C576351}" -recurse | Add-ItemVersion -Language "en-be" -TargetLanguage "en" -IfExist Append
+
+#Create Item under every item specified by template
+Get-Item -Path master: -Query "/sitecore/content/Sites/Corporate/DBR/Home//*[@@templatename='Discover Blog']" | New-Item -Path {$_.ItemPath} -Name "TEMPBUTTON"  -ItemType "/sitecore/templates/User Defined/Corporate/Data/Discover/Paragraph"
+
+#Exporting blogs into ListView
+Get-Item -Path master: -Query "/sitecore/content/Shared Data/discover/blog/2020//*[@@templatename='Discover Folder']" -Language "en-UK" | Show-Listview -Property Name, ID, ItemPath
+
+
+
+Get-ChildItem -Id "{B1BD52AC-9224-4BF2-B08C-5E6755A887DB}" -recurse | Copy-Item -Path {$_.ItemPath} -Destination "/sitecore/content/Shared Data/discover/blog/2020/UK/COVID19 impact on the CFO office manufacturing 2"
+#>
+
+----------------------------Copy items into multiple destination------------------------------------------------------
+$items = 'master:/sitecore/content/Sites/Corporate/DNA/Home/info/Applied Innovation/Page Configuration/New Vertical Image component' , 'master:/sitecore/content/Sites/Corporate/DNA/Home/info/Applied Innovation/Page Configuration/Quote', 'master://sitecore/content/Sites/Corporate/DNA/Home/info/Applied Innovation/Page Configuration/New Vertical Text component'
+$dests = 'master:/sitecore/content/Sites/Corporate/DSI/Home/info/Business transformation/Page Configuration','master:/sitecore/content/Sites/Corporate/DSI/Home/info/Data and Analytics/Page Configuration', 'master:/sitecore/content/Sites/Corporate/DSI/Home/info/Next generation business applications/Page Configuration'
+
+
+foreach($item in $items){
+    foreach($dest in $dests){
+        Copy-Item -Path $item -Destination $dest
+    }
+}
+
+
+#Itt valamit a DBE positionoknál csekkoltam
+$positions = Get-Item -Path master: -Query "/sitecore/content/Shared Data/Open Positions/Belgium//*[@@templatename='Job']" -Language *
+$blogitems = Get-Item -Path "master:/sitecore/content/Shared Data/discover/News/2021/Belgium/snp and delaware further simplify sap s4hana migration" -Language *
+foreach ($blog in $blogitems)
+{
+    Write-Host $blog.Fields["Social Sharing Image"]
+}
+foreach ($item in $positions)
+{
+    #Ezt biztos szebben is lehetne
+    if ($item.Language -eq "en" -or $item.Language -eq "fr-BE" -or $item.Language -eq "nl-BE")
+    {
+        Write-Host $item.Fields["Intro Image"]
+    }
+}
+
+#Measure mire jó
+Get-ChildItem -Id "{DD8D369A-527E-426C-A735-F6BDD4735490}" -recurse | Measure
+
+
+#Update numbers on about us page
+$countries = "DBE", "DBR", "DCH", "DFR", "DHU", "DLU", "DNL", "DPH", "DSI", "DUK", "DNA"
+foreach($country in $countries) {
+    $path = "master:/sitecore/content/Sites/Corporate/" + $country + "/Home/About Us/Page Configuration/Counter Block Config"
+    $childitems = Get-Childitem -Path $path
+    
+    $Professionals = Get-Item -Path $childitems[0].ItemPath -Language *
+    $Nationalities = Get-Item -Path $childitems[1].ItemPath -Language *
+    $Regional = Get-Item -Path $childitems[2].ItemPath -Language *
+    $Countries = Get-Item -Path $childitems[3].ItemPath -Language *
+    
+    foreach ($item in $Professionals) {
+        $item."Number" = 2600
+    }
+    foreach ($item in $Nationalities) {
+        $item."Number" = 35
+    }
+    foreach ($item in $Regional) {
+        $item."Number" = 28
+    }
+    foreach ($item in $Countries) {
+        $item."Number" = 14
+    }
+}
+
+$countries = "DBE", "DBR", "DCH", "DFR", "DHU", "DLU", "DNL", "DPH", "DSI", "DUK", "DNA"
+foreach($country in $countries) {
+    $path = "master:/sitecore/content/Sites/Corporate/" + $country + "/Home/About Us/Page Configuration/Counter Block Config"
+    Publish-Item -Path $path -Recurse -Language * -PublishMode Smart
+}
+########################################
+
+#Itt néztem meg hogy van e olyan ország ahol két permit country van
+$jobs = Get-Item -Path master: -Query "/sitecore/content/Shared Data/Open Positions//*[@@templatename='Job']" -Language *
+foreach($job in $jobs) {
+    Write-Host $job.ID $job.Fields["Permit Countries"]
+}
+
+#Hogyan érj el bármilyen fieldet
+$pelda = Get-Item -Path "master:/sitecore/content/Shared Data/Open Positions/Belgium/Junior Designer"
+Write-Host $pelda.Fields["Job Detailed Description"]
+
+#Country copy
+$countries = Get-ChildItem -Path "master:/sitecore/content/Shared Data/careers blog/2020"
+
+foreach($country in $countries){
+    Copy-Item -Path $country.ItemPath -Destination "master:/sitecore/content/Shared Data/careers blog/2021/"
+}
+
+Get-ChildItem -Path "master:/sitecore/content/Shared Data/careers blog/2020" | Copy-Item -Path $_.ItemPath -Destination "master:/sitecore/content/Shared Data/careers blog/2021/"
+
+#change the template in the Item
+
+$item = Get-Item -Path 'master:/sitecore/content/Shared Data/careers blog/2021/Belgium' -ID {7D708BF3-9F32-4E3A-922F-98985847E867}
+
+$item.Editing.BeginEdit();
+$item.TemplateId = "{494C93D4-E616-462D-B8B3-579A6E6F8C4C}"
+$item.Editing.EndEdit();
+
+#Get solutions with operation tag
+
+$solutions = Get-ChildItem -Path "master:/sitecore/content/Sites/Corporate/DBE/Home/Solutions" 
+$filteredSolutions = @()
+foreach ($solution in $solutions){
+    if($solution.fields['Business'] -like "*{DE75B911-06E3-40EB-8369-1B7DF668EE66}*" -And $solutions.fields["__Never publish"] -ne 1){
+        $filteredSolutions += $solution
+    }
+}
+
+Get-ChildItem -Path "master:/sitecore/content/Sites/Corporate/DBE/Home/Solutions" | Where-Object {$_.fields['Business'] -like "*{DE75B911-06E3-40EB-8369-1B7DF668EE66}*"} | Show-ListView
+
+#add offices to positions
+Get-ChildItem -ID "{5E77BE1C-D665-4D15-BC3F-823A4334980B}" | Where-Object {$_.Fields['__Never publish'].Value -ne "1"} | ForEach-Object{
+    $_.Editing.BeginEdit()
+    $_.Fields["Offices"].Value = "{D4001EB2-EF70-4887-9A32-E1FBFD6B4136}|{FBFB734E-EB6C-4B36-8D55-F528E3272B57}|{A49436DA-A1BE-4F79-A278-32E0A8077995}|{223C8260-F2F2-4E74-B89F-42B0B4B26156}|{43ED131D-E9B5-4C89-957A-A302F7710FCF}"
+    $_.Editing.EndEdit()
+}"
+
+
+#specific fields on Show-listview
+get-childitem -recurse `
+| where-object { $_.TemplateName -match "DocumentItem" -and  $_."File Category" -match "Teaching Sheets" } `
+| Sort "__Reminder Date" |
+Show-ListView -property `
+    @{ Name="Document Name"; Expression={$_.Name}},
+    @{ Name="Public Site Enabled"; Expression={switch($_.PublicSiteEnabled) { 0 {"False"; break} default {"True"; break}}}},
+    @{ Name="Reminder Text"; Expression={$_."__Reminder Text"}},
+    @{ Name="Reminder Date"; Expression={Get-Date -format "MM/dd/yyyy" $_."__Reminder Date"}},
+    @{ Name="File Category"; Expression={$_."File Category"}} `
+    -Title "Childrens's Hospital of Wisconsin" `
+    -InfoTitle "Report showing Teaching Sheets review date" `
+    -Modal -Width 960 -Height 640 -PageSize 200
+Show-Result -Text
+
+---------------------------------Copy footer items------------------------------------------
+$items = Get-ChildItem -Path "master:/sitecore/content/Sites/Corporate/DBE/Site Configuration/Footer Config"
+foreach($item in $items){
+$path = @($item.'ItemPath')
+Copy-Item -Path $path -Destination "master:/sitecore/content/Sites/Corporate/DFR/Site Configuration/Footer Config" -Recurse
+}
+
+
+$path ="master:/sitecore/content/Sites/Corporate"
+Get-ChildItem -Path $path -Recurse | 
+            Where-Object { $_.__Updated -gt [datetime]::Now.AddDays(-5) } | Show-ListView -property `
+    @{ Name="Document Name"; Expression={$_.Name}},
+    @{ Name="Document ID"; Expression={$_.ID}},
+    @{ Name="Document Path"; Expression={$_.ItemPath}}`
+--------------------------------------------read csv file and modify items by id ----------------------
+$media = Get-Item -Path "/sitecore/media library/New Corporate Folder/_Rebranding/Updated files csv/ToApproveItems"
+# get stream and save content to variable $content
+[System.IO.Stream]$body = $media.Fields["Blob"].GetBlobStream()
+try    
+{
+    $contents = New-Object byte[] $body.Length
+    $body.Read($contents, 0, $body.Length) | Out-Null
+} 
+finally 
+{
+    $body.Close()    
+}
+
+
+$csv = [System.Text.Encoding]::Default.GetString($contents) | ConvertFrom-Csv -Delimiter ";"
+
+foreach($row in $csv){
+    $path = @($row."Document Path");
+    $items = Get-Item -Path $path -Language *
+    foreach($item in $items) {
+        if($item."__Workflow state" -eq "{3AB79688-C34F-4454-B3EC-056AC3F56C8D}"){
+        $item.Editing.BeginEdit()
+        #$item.Fields["Workflow"].Value = "{3162F28D-EB11-4209-8275-27439FB72F7A}"
+        $item."__Workflow state" = "{7BE7EC98-54B4-4618-AE0D-4EC6DAC5D11B}"
+        $item.Editing.EndEdit()
+        }
+    }
+    
+}
+-------------------------change button theme & approve workflow_state & publish----------------------------------------
+Get-ChildItem -Id "{C231FC0D-2BBF-43E1-8E47-CAAD7D32AEF8}" -recurse  | Where-Object {$_.TemplateId -like "{AE3398B0-276B-4FD4-A802-F3017690283D}"} |ForEach-Object {
+    $_.Editing.BeginEdit()
+    $_.Fields["Theme"].Value = "{F2A450BA-46E2-4F1C-A864-C2535027297B}"
+    $_."__Workflow state" = "{7BE7EC98-54B4-4618-AE0D-4EC6DAC5D11B}"
+    $_.Editing.EndEdit()
+    
+    Publish-Item -Path ("master:" + $_.FullPath) -PublishMode  Smart 
+}
+
+-------------------------------------get specific items for sitemapping-------------------------------------------------------
+Get-ChildItem -Id "{DF18043B-21A9-4BF5-B9C1-B8E8C0E02D1A}" -Recurse  | Where-Object {$_.Fields['__Never publish'].Value -ne "1" -and $_.TemplateId -like "{4ECEBE47-DE76-4FCE-B133-E1523EA41733}" -and $_.Fields["Permit Countries"] -like "{3A319ABC-7F5B-4A39-BB8B-5384B36237ED}"} | Show-ListView -property `
+    @{ Name="Name"; Expression={$_.Name}},
+    @{ Name="Item ID"; Expression={$_.ID}},
+    @{ Name="Path"; Expression={$_.ItemPath}},
+    @{ Name="Permit Countries"; Expression={$_.Fields["Permit Countries"]}},
+    @{ Name="Created Date"; Expression={[datetime]::ParseExact($_.Fields['__Created'].Value.Substring(0,8), 'yyyyMMdd', $null).ToString('yyyy.MM.dd')}},
+    @{ Name="Last Update Date"; Expression={[datetime]::ParseExact($_.Fields['__Updated'].Value.Substring(0,8), 'yyyyMMdd', $null).ToString('yyyy.MM.dd')}},
+    @{ Name="Links" ; Expression={"https://www.delaware.pro/en-cn/careers/" + $_.Name}}
+
+--------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,1 @@
+Get-Item master: -Query "fast://sitecore/content/Shared Data/Open Positions//*[@@templatename='Job']" -language * | Where {-not $_.JobDomains}

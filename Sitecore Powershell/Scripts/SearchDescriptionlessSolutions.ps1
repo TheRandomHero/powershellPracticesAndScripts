@@ -1,0 +1,2 @@
+$solutionsQuery = "/sitecore/content/Sites/Corporate/*/Home/Solutions//*[@@templatename='Solution Config']"
+Get-Item master: -Query $solutionsQuery -Language * | Where {(-Not $_.Description -and -Not $_."Long Description" -and -Not $_."Short Description")} | Format-Table Name, Language, Description, "Long Description", "Short Description"

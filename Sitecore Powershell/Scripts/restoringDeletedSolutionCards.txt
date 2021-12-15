@@ -1,0 +1,34 @@
+$masterDB = Get-Database 'master'
+$recycleBin = Get-Archive 'recyclebin' -Database $masterDB
+$dateToCheck = Get-Date -Date "2018-01-04 10:00:00Z"
+
+$pageIds = "{D7E550B0-8C63-4495-B900-97DA1BF502A9}",
+"{B875E902-D667-4738-8AC7-35155C264729}",
+"{94623698-034C-4223-BD0E-A33D8CE3EFE4}",
+"{07E67B23-3B22-4FF8-B4CB-3425E03CB564}",
+"{A65A539D-45D3-4B43-80A8-60EB394DE8F8}",
+"{4B426D66-E218-4CCC-8483-D4F7C0DFB141}",
+"{6720BA51-3CC1-440E-9777-B9624C445265}",
+"{AAB24D9F-4221-466B-B0C5-72EA63F25A72}",
+"{0CED6BC3-2417-42B3-AE55-F4923D86337E}",
+"{134D3900-89DB-4456-BDA1-7C525438BA47}",
+"{BC7ACC29-33A6-4964-8509-38ADF7B37461}",
+"{0D2391F6-384A-445D-B56B-66400FE424D5}",
+"{529240D4-964A-4A3E-9B4D-07CBDCB1C4EB}",
+"{C29FA7D1-BA0E-49C6-BAA0-CDBB1135EB4A}",
+"{02749FBB-28BB-4B43-9E90-C6F6B7AEEC2F}",
+"{49817DC6-D753-4250-8771-FF573A7943AA}",
+"{898355E8-909A-4A0E-BB94-A3AC4E9172A9}",
+"{A78CD584-DDE6-4BFA-94ED-9A8D706555D3}",
+"{DB6E1E54-D39A-49C2-8C63-32BBBE5D3243}"
+
+<#foreach ($pageId in $pageIds) {
+    (Get-Item master: -Id $pageId).FullPath
+}#>
+
+#$recycleBin.GetEntries(0, 5000).Where($entry => $entry.Archivedby.Equals("sitecore\Bieket")).ToList()
+$recycleBin.GetEntries(0, 5000) |
+where { $_.ArchivedBy -eq "sitecore\Bieket" -and $_.Name -like "*Solution Card*" -and $_.ArchiveDate.DayOfYear -eq $dateToCheck.DayOfYear } |
+foreach-object {$recycleBin.RestoreItem($_.ArchivalId)}
+<#group {  $_.ParentId } |
+Format-Table Name#>

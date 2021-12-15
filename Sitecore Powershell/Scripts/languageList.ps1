@@ -1,0 +1,1 @@
+$languages = "en-ae", "en-be", "en-br", "en-cn", "en-fr", "en-hu", "en-lu", "en-nl", "en-ph", "en-sg", "en-us", "en-gb", "fr", "fr-fr", "fr-be", "fr-lu", "nl-be", "nl-lu", "nl-nl", "nl", "pt-br", "zh-cn", "hu-hu", "hu", "pt", "zh", "en-my"

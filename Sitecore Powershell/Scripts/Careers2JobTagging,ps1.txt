@@ -1,0 +1,39 @@
+$media = Get-Item -Path "/sitecore/media library/New Corporate Folder/DBE/Careers/job tagging"
+[system.io.stream]$body = $media.Fields["blob"].GetBlobStream()
+
+try {
+    $contents = New-Object byte[] $body.Length
+    $body.Read($contents, 0, $body.Length) | Out-Null
+} finally {
+    $body.Close()    
+}
+
+$csv = [System.Text.Encoding]::Default.GetString($contents) | ConvertFrom-Csv -Delimiter ';'
+
+foreach ($row in $csv) {
+    $name = ($row."ï»¿name").ToLower()
+    $jobItem = $null
+    $jobItem = gi master: -query ("fast://sitecore/content/Shared Data/Open Positions/Belgium/*[@@key='"+ $name +"']")
+    
+    if(-not $jobItem) {
+         $jobItem = gci -path "/sitecore/content/Shared Data/Open Positions/Belgium/" | Where { ($_."Content Title" -like "*$name*") -or ($_."Page Title" -like "*$name*")}
+    }
+    if (-not $jobItem) {
+        $name
+    }
+    else {
+        ($row | Select-Object -Property * -ExcludeProperty @("Name","URL", "Recruiter")).PSObject.Properties | % {
+            if ($_.Value -like "x") {
+                $tagname = $_.Name.ToLower()
+                $tagItem = gi master: -query ("/sitecore/content/Shared Configuration/Carrers Config/Job tags/*/*[@@key='" + $tagname + "']")
+                #$jobItem.($tagItem.parent.name) = ""
+                if ($tagItem) {
+                    foreach ($tag in $tagItem) {
+                        $jobitem.($tag.parent.name) += ([string]$tagitem.ID + "|")
+                    }
+                   
+                }
+            }
+        }
+    }
+}

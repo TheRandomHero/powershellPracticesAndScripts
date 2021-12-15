@@ -1,0 +1,2 @@
+#Creates new language version in targetlanguage, and copies all fields form language, -recurse does it on all child items
+Get-Item master: -ID "{DA92B310-C20E-4AA0-BC3B-281CAA106238}" | Add-ItemVersion -Language "en" -TargetLanguage "zh" -Recurse
